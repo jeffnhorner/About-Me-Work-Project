@@ -1,0 +1,64 @@
+/* Additional responsiveness for website project */
+
+
+@media (max-width: 768px) {
+
+
+  /* Parallax Content */
+
+  .parallax-title {
+    font-size: 3.75rem;
+  }
+
+  .parallax-title + h3 {
+    font-size: 1.5rem;
+  }
+
+  .headshot {
+    width: 225px;
+  }
+
+  #topspotter {
+    font-size: 1.5rem;
+  }
+
+  .about-container {
+    padding: 0 40px;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .about-text {
+    font-size: 1.25rem;
+  }
+
+  .fun-fact {
+    position: relative;
+    top: 375px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px 20px 20px;
+    background-color: #262626;
+    opacity: .6;
+  }
+  
+  .fun-fact > h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+  }
+
+  .about-title {
+    font-size: 3.25rem;
+  }
+
+  #about-me-main-text {
+    font-size: 1.25rem;
+  }
+
+}

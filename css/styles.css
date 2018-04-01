@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fcfcfc;
+  color: #262626;
+  font-family: "Avenir", san-serif;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 } 
+  to { opacity: 1 }
+}
+
+
+/* Parallax Content */
+
+#parallax-1 {
+  min-height: 1090px;
+  background-image: url("../images/parallax-1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax-2 {
+  min-height: 1090px;
+  background-image: url("../images/parallax-2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 210px;
+  font-size: 7rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 3px 3px 30px #301602;
+}
+
+.parallax-title + h3 {
+  text-align: center;
+  padding: 0 50px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #301602;
+  opacity: .8;
+  text-shadow: 1px 1px 20px #fcfcfc;
+}
+
+#topspotter {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.25rem;
+  text-shadow: 1px 1px 30px #fcfcfc;
+  transition: all .2s ease-in-out;
+}
+
+
+#topspotter:hover {
+  transform: scale(1.1);
+}
+
+#topspotter a {
+  color: #157cab;
+  font-weight: 600;
+}
+
+#topspotter a:hover {
+  text-decoration: none;
+}
+
+#geek {
+  color: #157cab;
+  font-weight: 600;
+  opacity: .9;
+}
+
+#geek:hover {
+  opacity: 1;
+}
+
+.headshot {
+  margin-top: 20px;
+  width: 330px;
+  height: auto;
+  border-radius: 50%;
+  opacity: .8;
+  box-shadow: 5px 5px 30px #262626;
+}
+
+
+/* Floating headshot */
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 30px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+
+/* Scroll Button  */
+
+.button {
+  width: 100%;
+  text-align: center;
+}
+
+.button a {
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.button a:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+#scroll-down-btn a {
+  padding-top: 60px;
+}
+#scroll-down-btn a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#scroll-down-btn a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#scroll-down-btn a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Content */
+
+.info-wrapper {
+  height: 100%;
+}
+
+.about-container {
+  padding: 100px 250px 110px 250px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 30px 0 60px 0;
+  opacity: .9;
+}
+
+#about-me-main-text {
+  line-height: 2.5rem;
+  text-align: left;
+  width: 97%;
+  margin: 0 auto;
+  padding: 0 0 40px 10px;
+  font-size: 1.6rem;
+}
+
+#college {
+  color: #500000;
+  font-weight: 600;
+  opacity: .8;
+}
+
+#college:hover {
+  opacity: 1;
+}
+
+.about-text {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 2.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.45rem;
+}
+
+.headshot-wrapper {
+  text-align: center; 
+
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  min-height: 250px;
+  max-width: 450px;
+  margin: 0 auto;
+  opacity: .8;
+  box-shadow: 5px 5px 18px #262626;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+
+.about-image:hover {
+  opacity: 1;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 2.1rem;
+}
+
+#starbucks {
+  color: #00704a;
+  font-weight: bold;
+  opacity: .8;
+}
+
+#starbucks:hover {
+  opacity: 1;
+}
+
+#kelsey-horner-website {
+  color: #262626;
+  font-weight: bold;
+}
+
+
+#about-title-2 {
+  text-align: center;
+  margin: 40px 0 60px 0;
+  opacity: .9;
+}
+
+
+/* Fun Fact */
+
+#parallax-2 a {
+  text-decoration: none;
+}
+
+.fun-fact {
+  position: relative;
+  top: 410px;
+  text-align: center;
+  width:600px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+  background-color: #262626;
+  opacity: .7;
+  transition: all .3s ease-in-out;
+  animation: pulse 2.5s infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+.fun-fact > h1 {
+  color: #fff;
+  font-size: 4.75rem;
+  text-transform: uppercase;
+}
+
+.fun-fact:hover {
+  opacity: .85;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 5px 0;
+}
+
+footer div {
+  font-size: 80%;
+}
+
+footer div a {
+  color: #262626;
+  font-weight: bold;
+}
+
+footer div a:hover {
+  color: #262626;
+  text-decoration: none;
+}

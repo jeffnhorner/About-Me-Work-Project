@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  background: #ADA996; 
+  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+  font-family: "Avenire", sans-serif;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 } 
+  to { opacity: 1 }
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0 0 0;
+  padding-bottom: 0;
+}
+
+.me-and-mike {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.me-and-mike img {
+  width: 700px;
+  max-width: 95%;
+  height: auto;
+  box-shadow: 5px 5px 30px #262626;
+}
+
+h4 {
+  text-align: center;
+  padding: 30px 0 10px 0;
+  text-shadow: 1px 1px 20px #fcfcfc;
+}
+
+#homepage {
+  width: 100%;
+  text-align: center;
+}
+
+#homepage img{
+  max-width: 90%;
+  width: 240px;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, .8);
+  margin-bottom: 30px;
+  transition: all .3s ease-in-out;
+  opacity: .9;
+}
+
+#homepage img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
+/* Mobile Optimziation */
+
+@media (max-width: 768px) { 
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h4 {
+    font-size: 1.3rem !important;
+  }
+
+}
